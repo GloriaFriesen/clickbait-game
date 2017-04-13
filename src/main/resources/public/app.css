@@ -419,6 +419,23 @@ h3 {
   color: white;
   text-align: center;
 }
+
+#highScores {
+  font-size: 25px;
+}
+
+#font {
+  font-family: 'Comfortaa', cursive;
+}
+
+#font1 {
+  font-family: 'Comfortaa', cursive;
+}
+
+.col-md-12 {
+  margin-top: 150px;
+}
+
 @media screen and (max-width: 1200px){
     .home h1 {
         font-size: 85px;

@@ -1,5 +1,5 @@
 <div class="jumbotron text-center success">
-  <h1>Yay. You beat level $lastLevel!</h1>
+  <h1>Yay.<br>You beat level $lastLevel!</h1>
 </div>
 
 <div class="well" id="fistWell">
@@ -21,14 +21,14 @@
       <a href="/levels/$game.getLevelId()"><button type="button" name="button" class="btn btn-success">Next Level!</button></a>
 
   #else
-    <h2>Hurrah!!</h2>
+    <h2 id="font1">Hurrah!!</h2>
     <h3>You have completed the game!</h3>
     <br>
     <a href="/"><button type="button" name="button" class="btn btn-success">Return Home</button></a>
     </br>
     <h4>See how you stacked up against other players:</h4>
     #foreach($game in $topScores)
-      <p>
+      <p id="highScores">
         $game.getPlayerName() <span class="text-right">$game.getScore()</span>
       </p>
       #end
